@@ -1,0 +1,10 @@
+node_modules
+.claude
+**/dist/
+**/.cache/
+**/.temp/
+.yarn/*
+!.yarn/patches
+.idea/
+.DS_Store
+**/.DS_Store
