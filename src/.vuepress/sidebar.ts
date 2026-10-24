@@ -63,6 +63,11 @@ export default sidebar({
                     icon: "hugeicons:chat-gpt",
                     link: "3-codex.md",
                 },
+                {
+                    text: "Gemini配置",
+                    icon: "vscode-icons:file-type-gemini",
+                    link: "4-gemini.md",
+                },
             ],
         },
         {
@@ -86,6 +91,11 @@ export default sidebar({
                     text: "Codex配置",
                     icon: "hugeicons:chat-gpt",
                     link: "3-codex.md",
+                },
+                {
+                    text: "Gemini配置",
+                    icon: "vscode-icons:file-type-gemini",
+                    link: "4-gemini.md",
                 },
             ],
         },

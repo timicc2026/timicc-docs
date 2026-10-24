@@ -163,6 +163,20 @@ sudo dpkg -i cc-switch_x.x.x_amd64.deb
 
 ![](/assets/image/Cli/010.webp)
 
+## ::vscode-icons:file-type-gemini:: Gemini配置
+
+CC Switch 可以同时保存多份 Gemini 供应商，在列表里一键切换。完整步骤见 [Gemini配置](/docs/ccswitch/4-gemini.html)。
+
+1. 打开 CC Switch，在顶部分组条中选择 **Gemini**
+
+![](/assets/image/CC-Switch/012.webp)
+
+2. 添加供应商。预设里有 **TIMI CC** 就直接选中；没有就手动填写，请求地址为 `https://timicc.com`
+
+3. 回顾 [创建 API 密钥](/docs/register/4-token.html)，在 TIMI CC 中创建 **Gemini** 分组的密钥，填入 **API Key** 后添加并启用
+
+4. 退出并重新打开 Gemini CLI，执行 `gemini` 测试。需要另一份配置时，重复添加，再在列表中切换
+
 ## CC Switch CLI 使用
 
 CC-Switch CLI 同时提供完整 CLI 命令和完整 TUI 界面，适合服务器、SSH、macOS 终端和自动化场景使用。你也可以让 Claude Code / Codex 直接调用 `cc-switch` 命令来检查、切换和修复配置。

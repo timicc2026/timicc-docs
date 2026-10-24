@@ -315,3 +315,55 @@ codex
 
 :::
 
+## ::vscode-icons:file-type-gemini:: Gemini配置
+
+手动配置只保留一份 `.env`。要在多个密钥之间切换，请使用 [CC Switch 的 Gemini 配置](/docs/ccswitch/4-gemini.html)。单独的图文步骤见 [Gemini配置](/docs/cli/4-gemini.html)。
+
+::: tabs
+
+@tab Windows
+
+1. 按下 `Win+R`，输入以下内容后回车，打开 Gemini CLI 配置目录
+
+```bash
+%userprofile%\.gemini
+```
+
+![](/assets/image/Cli/019.webp)
+
+2. 如果没有 `.env`，新建并写入以下内容。`xxx` 替换为 TIMI CC 中 **Gemini** 分组的密钥，模型名按该分组实际可用模型修改
+
+```bash
+GOOGLE_GEMINI_BASE_URL=https://timicc.com
+GEMINI_API_KEY=xxx
+GEMINI_MODEL=gemini-3.8-flash
+```
+
+3. 打开终端执行 `gemini`，能进入对话并收到回复即表示配置成功
+
+![](/assets/image/Cli/022.webp)
+
+@tab MacOS
+
+1. 按下 `Command+Shift+G`，输入以下路径后回车
+
+```bash
+~/.gemini
+```
+
+![](/assets/image/Cli/023.webp)
+
+2. 如果没有 `.env`，新建并写入以下内容。`xxx` 替换为 TIMI CC 中 **Gemini** 分组的密钥，模型名按该分组实际可用模型修改
+
+```bash
+GOOGLE_GEMINI_BASE_URL=https://timicc.com
+GEMINI_API_KEY=xxx
+GEMINI_MODEL=gemini-3.8-flash
+```
+
+3. 在终端运行 `gemini`，能进入对话并收到回复即表示配置完成
+
+![](/assets/image/Cli/022.webp)
+
+:::
+
