@@ -9,7 +9,7 @@ CC Switch 可以同时保存多份 Gemini 供应商配置，之后在列表里�
 
 1. 打开你下载的 CC Switch，初始界面如下
 
-![](/assets/image/CC-Switch/003.webp)
+![](/assets/image/CC-Switch/018.webp)
 
 2. 在顶部分组条中，将分组选择至 **Gemini**
 
