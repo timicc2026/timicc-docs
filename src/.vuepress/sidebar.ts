@@ -97,6 +97,11 @@ export default sidebar({
                     icon: "vscode-icons:file-type-gemini",
                     link: "4-gemini.md",
                 },
+                {
+                    text: "Grok Build配置",
+                    icon: "simple-icons:x",
+                    link: "6-grok-build.md",
+                },
             ],
         },
         {
@@ -119,6 +124,16 @@ export default sidebar({
                     text: "Hermes",
                     icon: "game-icons:caduceus",
                     link: "Hermes.md",
+                },
+                {
+                    text: "DS接入CC",
+                    icon: "simple-icons:deepseek",
+                    link: "DeepSeekClaudeCode.md",
+                },
+                {
+                    text: "DS接入Codex",
+                    icon: "simple-icons:deepseek",
+                    link: "DeepSeekCodex.md",
                 },
                 {
                     text: "GPT接入CC",
