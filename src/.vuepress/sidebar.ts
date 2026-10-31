@@ -64,9 +64,26 @@ export default sidebar({
                     link: "3-codex.md",
                 },
                 {
+                    text: "Claude Desktop配置",
+                    icon: "material-icon-theme:claude",
+                    link: "4-claude-desktop.md",
+                },
+                {
                     text: "Gemini配置",
                     icon: "vscode-icons:file-type-gemini",
                     link: "4-gemini.md",
+                },
+            ],
+        },
+        {
+            text: "环境准备",
+            icon: "mdi:tools",
+            collapsible: false,
+            children: [
+                {
+                    text: "环境确认（Node.js 与 npm）",
+                    icon: "mdi:tools",
+                    link: "cli/node.md",
                 },
             ],
         },
@@ -105,16 +122,28 @@ export default sidebar({
             ],
         },
         {
-            text: "第三方接入",
-            icon: "noto:fire",
-            prefix: "advanced/",
+            text: "官方客户端",
+            icon: "material-symbols:desktop-windows",
             collapsible: false,
             children: [
                 {
                     text: "Claude Desktop",
                     icon: "material-icon-theme:claude",
-                    link: "ClaudeDesktop.md",
+                    link: "advanced/ClaudeDesktop.md",
                 },
+                {
+                    text: "ChatGPT",
+                    icon: "hugeicons:chat-gpt",
+                    link: "ccswitch/6-codex-app.md",
+                },
+            ],
+        },
+        {
+            text: "第三方接入",
+            icon: "noto:fire",
+            prefix: "advanced/",
+            collapsible: false,
+            children: [
                 {
                     text: "OpenCode",
                     icon: "mynaui:code-hexagon-solid",
@@ -157,6 +186,34 @@ export default sidebar({
                     text: "Codex",
                     icon: "hugeicons:chat-gpt",
                     link: "Codex.md",
+                },
+            ],
+        },
+        {
+            text: "用户须知",
+            icon: "mdi:information-outline",
+            prefix: "faq/",
+            collapsible: false,
+            children: [
+                {
+                    text: "服务条款",
+                    icon: "mdi:file-document-outline",
+                    link: "terms.md",
+                },
+                {
+                    text: "使用政策",
+                    icon: "mdi:shield-check",
+                    link: "usage-policy.md",
+                },
+                {
+                    text: "支持的国家和地区",
+                    icon: "mdi:earth",
+                    link: "supported-regions.md",
+                },
+                {
+                    text: "隐私政策",
+                    icon: "mdi:shield-lock-outline",
+                    link: "service-specific-terms.md",
                 },
             ],
         },

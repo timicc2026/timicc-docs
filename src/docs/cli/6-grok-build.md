@@ -170,25 +170,28 @@ grok -p "只回复 ok" -m grok-4.6 --effort high
 `/effort` 只在当前模型声明了 `supports_reasoning_effort = true` 时才生效；不同模型支持的等级范围可能不同，具体以模型菜单里展示的为准。
 :::
 
-## 测试配置
+## 检查配置是否生效
 
-1. 检查 Grok Build 是否读取到了配置文件：
+1. 先确认 Grok Build 读到了配置。下面的命令会列出它在当前目录发现的内容，包括配置来源、指令、技能、插件、hooks 与 MCP 服务器：
 
 ```bash
 grok inspect
 ```
 
-2. 发送一次最小测试请求：
+2. 再发一次最小请求，能返回 `ok` 就说明网关与令牌都通了：
 
 ```bash
-grok -p "只回复 ok" -m grok-4.6
+grok -p "只回复 ok" -m grok-4.7
 ```
 
-如果输出类似下面内容，说明配置已经生效：
+## 官方参考
 
-```text
-ok
-```
+Grok Build 更新较快，完整字段与命令以官方文档为准：
 
-更多排查问题请参考 [Grok Build 常见问题](/docs/faq/GrokBuild.html)。
+- [Getting Started](https://docs.x.ai/build/overview)：安装脚本与自定义模型写法
+- [Settings Reference](https://docs.x.ai/build/settings/reference)：`config.toml` 各段字段与环境变量
+- [CLI Reference](https://docs.x.ai/build/cli/reference)：子命令与常用参数
+- [Headless & Scripting](https://docs.x.ai/build/cli/headless-scripting)：`-p`、`--effort` 等无头模式用法
+- [Modes and Commands](https://docs.x.ai/build/modes-and-commands)：`/effort`、`/model` 等 TUI 命令
+- [install.sh](https://x.ai/cli/install.sh) / [install.ps1](https://x.ai/cli/install.ps1)：安装脚本，会在 `config.toml` 里写入 `[cli] installer`
 

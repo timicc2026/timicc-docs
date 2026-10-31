@@ -198,8 +198,8 @@ gemini
 将以下配置文本复制到你的 config.toml文件中保存
 ```toml
 model_provider = "OpenAI"
-model = "gpt-5.5"
-review_model = "gpt-5.5"
+model = "gpt-6-astra"
+review_model = "gpt-6-astra"
 model_reasoning_effort = "xhigh"
 disable_response_storage = true
 network_access = "enabled"
@@ -270,8 +270,8 @@ codex
 
 ```toml
 model_provider = "OpenAI"
-model = "gpt-5.5"
-review_model = "gpt-5.5"
+model = "gpt-6-astra"
+review_model = "gpt-6-astra"
 model_reasoning_effort = "xhigh"
 disable_response_storage = true
 network_access = "enabled"

@@ -53,7 +53,7 @@ npm install -g opencode-ai
     :::
 
     **比如现在我的API密钥对应的是Codex分组，那么我可以直接配置：**
-        - 模型ID：gpt-5.5 显示名称：gpt-5.5
+        - 模型ID：gpt-6-astra 显示名称：gpt-6-astra
     - 全部配置好后，点击右下角 `添加` 按钮
 
 ![](/assets/image/Advanced/OpenCode/04.webp)

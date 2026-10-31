@@ -42,10 +42,10 @@ date: 2026-06-27
     - **API Key**：填写刚才创建的 `codex` 分组 API Key
     - **请求地址**：`https://timicc.com`
     - **API 格式**：`OpenAI Responses API（需开启路由）`
-    - **主模型**：填写你希望映射到 Claude Code 主模型的 GPT 模型，例如 `gpt-5.5`
+    - **主模型**：填写你希望映射到 Claude Code 主模型的 GPT 模型，例如 `gpt-6-astra`
     - **Haiku 默认模型**：填写较轻量的 GPT 模型，例如 `gpt-5.4-mini`
-    - **Sonnet 默认模型**：填写你希望映射到 Sonnet 的 GPT 模型，例如 `gpt-5.5`
-    - **Opus 默认模型**：填写你希望映射到 Opus 的 GPT 模型，例如 `gpt-5.5`
+    - **Sonnet 默认模型**：填写你希望映射到 Sonnet 的 GPT 模型，例如 `gpt-6-astra`
+    - **Opus 默认模型**：填写你希望映射到 Opus 的 GPT 模型，例如 `gpt-6-astra`
 
 ![](/assets/image/Advanced/ChatGPTClaudeCode/02.webp)
 
@@ -87,7 +87,7 @@ date: 2026-06-27
 
 ![](/assets/image/Advanced/ChatGPTClaudeCode/09.webp)
 
-4. 最后到 TIMI CC 的消费日志中确认实际调用情况。如果配置正确，消费日志中应显示 `codex` 分组，并记录实际扣费的 GPT 模型，例如 `gpt-5.5`。
+4. 最后到 TIMI CC 的消费日志中确认实际调用情况。如果配置正确，消费日志中应显示 `codex` 分组，并记录实际扣费的 GPT 模型，例如 `gpt-6-astra`。
 
 ![](/assets/image/Advanced/ChatGPTClaudeCode/10.webp)
 
